@@ -27,7 +27,7 @@ jobs:
 
   second-job:
     runs-on: ubuntu-latest
-    if: $parameter1 == "Wednesday"
+    if: ${{ env.parameter1 == "Wednesday" }}
     steps:
       - name: Simple shell command step 
         run: echo Hello
