@@ -25,6 +25,9 @@ jobs:
       - name: Access parameter
         run: echo $parameter1
 
+      - name: Access secret
+        run: echo ${{ secrets.Peder_Secret1 }}
+
   second-job:
     runs-on: ubuntu-latest
     steps:
