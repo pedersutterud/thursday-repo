@@ -1,4 +1,4 @@
-name: FirstName
+name: First
 
 on:
   push:
@@ -10,6 +10,9 @@ on:
   schedule:
     - cron: "10 * * * *"
 
+env:
+  parameter1: Thursday
+
 jobs:
   first-job:
     runs-on: ubuntu-latest   
@@ -19,8 +22,12 @@ jobs:
       - name: Another simple shell command step 
         run: echo Hello from Step 2
 
+      - name: Access parameter
+        run: echo $parameter1
+
   second-job:
-    runs-on: ubuntu-latest   
+    runs-on: ubuntu-latest
+    if: $parameter1 == "Wednesday"
     steps:
       - name: Simple shell command step 
         run: echo Hello
