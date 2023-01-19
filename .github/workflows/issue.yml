@@ -5,6 +5,7 @@ on:
     types:
       - opened
 
+permissions: write-all
 jobs:
   label_issue:
     runs-on: ubuntu-latest
