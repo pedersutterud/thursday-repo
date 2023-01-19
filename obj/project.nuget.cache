@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "DZOM4wfL5oJ2SyQS1FcOyw/oP72QsEGtMzFFO3Dc4J1aTOnc5WUEuWaaq4yCWmRQh/qMWsICxhN/Y7O0ok5K6Q==",
+  "success": false,
+  "projectFilePath": "C:\\VSCode\\GithubKurs\\thursday-repo\\thursday-repo.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.AspNetCore.OpenApi (>= 7.0.2)' for 'net7.0'.",
+      "libraryId": "Microsoft.AspNetCore.OpenApi",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Swashbuckle.AspNetCore (>= 6.4.0)' for 'net7.0'.",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}
