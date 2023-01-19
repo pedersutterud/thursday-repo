@@ -1,15 +1,15 @@
 name: Issue Bugger
 
 on:
-  issues:
-    types:
-      - opened
+ issues:
+  types:
+   - opened
 
 permissions: write-all
 jobs:
-  label_issue:
-    runs-on: ubuntu-latest
-    steps:
+ label_issue:
+  runs-on: ubuntu-latest
+  steps:
       - env:
           GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
           ISSUE_URL: ${{ github.event.issue.html_url }}
