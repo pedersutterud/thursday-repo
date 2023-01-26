@@ -7,8 +7,8 @@ on:
 
   workflow_dispatch: # manual way of starting workflows
 
-  schedule:
-    - cron: "10 * * * *"
+ # schedule:
+ #   - cron: "10 * * * *"
 
 env:
   parameter1: Thursday
